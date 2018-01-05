@@ -41,6 +41,8 @@ int main()
         pthread_join(workers[i], NULL);
     }
 
+    pthread_mutex_destroy(&mutex);
+
     return EXIT_SUCCESS;
 }
 
